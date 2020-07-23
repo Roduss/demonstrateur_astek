@@ -1,4 +1,4 @@
-import 'file:///D:/Esme/5_eme_annee/Astek/Taf/demonstrateur_astek/lib/screens/main.dart';
+import 'main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
