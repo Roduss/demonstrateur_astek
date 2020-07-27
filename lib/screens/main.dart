@@ -5,6 +5,7 @@ import 'package:flutter/rendering.dart';
 import 'package:demonstrateur_astek/size_config.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_blue/flutter_blue.dart';
+import '../ble_utils/building_ble_services.dart';
 
 ///Page de démarrage
 
@@ -22,167 +23,143 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(
-        title: "Appairage auto",
-      ),
+      home: StreamBuilder<BluetoothState>(
+          stream: FlutterBlue.instance.state,
+          initialData: BluetoothState.unknown,
+          builder: (c, snapshot) {
+            final state = snapshot.data;
+            if (state == BluetoothState.on) {
+              return FindDevicesScreen();
+            }
+            return BluetoothOffScreen(state); //Page quand le bluetooth est désactivé
+          }),
     );
   }
 }
 
-///Deprecated
+//Page quand le bluetooth est activé
 
-///Redirection vers la page d'appairage automatique
-class Delimitor extends StatelessWidget {
+class FindDevicesScreen extends StatefulWidget {
+  FindDevicesScreen({Key key}) : super(key:key);
+
+  @override
+  FindDevicesScreenState createState() {
+    return FindDevicesScreenState();
+  }
+}
+
+
+class FindDevicesScreenState extends State<FindDevicesScreen>{
+
+  FindDevicesScreenState();
+  BluetoothCharacteristic characteristic;
+
+
+  @override
+  void initState(){
+    bool isHere = false;
+    ScanResult r;
+    FlutterBlue.instance.startScan(timeout: Duration(seconds: 2));
+    /*var subscription = FlutterBlue.instance.scanResults.listen((results) {
+      for(r in results){
+        if(r.device.name ==('Nordic_UART')){
+          isHere=true;
+
+        }
+      }
+      if(isHere == true){
+        /// r.device.connect(); Pas fou parce qu'il essaie de se connecer à tous
+        ///Les devices dispos !
+        print("Connected to nordic from init");
+      }
+    });*/
+  }
+
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        //Delimiteur entre chaque data.
-        height: 20,
-        child: Center(
-            child: Container(
-          margin: EdgeInsetsDirectional.only(start: 1.0, end: 1.0),
-          height: 2,
-          color: Colors.black,
-        )));
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-  final FlutterBlue flutterBlue = FlutterBlue.instance;
-  final List<BluetoothDevice> devicesList = new List<BluetoothDevice>();
-  final Map<Guid, List<int>> readValues = new Map<Guid, List<int>>();
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  ScanResult result;
-  final _writeController = TextEditingController();
-  BluetoothDevice _connectedDevice;
-  List<BluetoothService> _services;
-  //Fonction pour rediriger vers l'accueil
-  _pushtoAccueil() {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (BuildContext context) => Accueil()));
-  }
-
-  _addDeviceTolist(final BluetoothDevice device) {
-    if (!widget.devicesList.contains(device)) {
-      setState(() {
-        widget.devicesList.add(device);
-      });
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    widget.flutterBlue.connectedDevices
-        .asStream()
-        .listen((List<BluetoothDevice> devices) {
-      for (BluetoothDevice device in devices) {
-        _addDeviceTolist(device);
-      }
-    });
-    widget.flutterBlue.scanResults.listen((List<ScanResult> results) {
-      for (result in results) {
-        _addDeviceTolist(result.device);
-      }
-    });
-    widget.flutterBlue.startScan(timeout: Duration(seconds: 4));
-  }
-
-  ListView _buildListViewOfDevices() {
-    List<Container> containers = new List<Container>();
-    for (BluetoothDevice device in widget.devicesList) {
-      containers.add(
-        Container(
-          margin: EdgeInsets.only(bottom: 20),
-          height: 50,
-          child: Row(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Conect to Devices'),
+      ),
+      body: RefreshIndicator(
+        onRefresh: () =>
+            FlutterBlue.instance.startScan(timeout: Duration(seconds: 4)),
+        child: SingleChildScrollView(
+          child: Column(
             children: <Widget>[
-              Expanded(
-                child: Column(
-                  children: <Widget>[
-                    AutoSizeText(
-                      device.name == '' ? '(unknown device)' : device.name,
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                      maxLines: 1,
+              StreamBuilder<List<BluetoothDevice>>(
+                stream: Stream.periodic(Duration(seconds: 2))
+                    .asyncMap((_) => FlutterBlue.instance.connectedDevices),
+                initialData: [],
+                builder: (c, snapshot) => Column(
+                  children: snapshot.data
+                      .map((d) => ListTile(
+                    title: Text((() { // A placer quand la liste est crée apparemment, parce que ça s'éxécute quand je cliques sur Nordic.
+
+                      ///Le fait de mettre un navigator empeche de revenir sur la page
+                      ///de connexion, ça sera peut etre intérréssant !
+                      return d.name;
+                    } ())),
+
+
+                    subtitle: Text(d.id.toString()),
+                    trailing: StreamBuilder<BluetoothDeviceState>(
+                      stream: d.state,
+                      initialData: BluetoothDeviceState.disconnected,
+                      builder: (c, snapshot) {
+                        if (snapshot.data ==
+                            BluetoothDeviceState.connected) {
+                          return RaisedButton(
+                            child: Text('DISCONNECT'),
+                            onPressed: () {
+                              d.disconnect();
+                              FlutterBlue.instance.startScan(timeout: Duration(seconds: 2));
+                            },
+
+                          );
+                        }
+
+
+                        return Text(snapshot.data.toString());
+                      },
                     ),
-                    Text(device.id.toString()),
-                  ],
+                  ))
+                      .toList(),
                 ),
               ),
-              FlatButton(
-                color: Colors.blue,
-///TODO : a recheck si ça tourne ou pas.
-                child: //((() {
-                 /* if (_connectedDevice.name == device) {
-                    Text(
-                      'Disconnect',
-                      style: TextStyle(color: Colors.white),
-                    );
-                  } else {
-                    Text(
-                      'Connect',
-                      style: TextStyle(color: Colors.white),
-                    );
-                  }
-                }())),*/
-                 Text(
-                 'Connect',
-                 style: TextStyle(color: Colors.white),
-    ),
-                onPressed: () async {
-                  widget.flutterBlue.stopScan();
-                  try {
-                    await device.connect();
-                  } catch (e) {
-                    if (e.code != 'already_connected') {
-                      throw e;
-                    }
-                  } finally {
-                    _services = await device.discoverServices();
-                  }
-                  setState(() {
-                    _connectedDevice = device;
-                    print("Connecté : $_connectedDevice");
-                  });
-                },
+              StreamBuilder<List<ScanResult>>(
+                stream: FlutterBlue.instance.scanResults,
+                initialData: [],
+                builder: (c, snapshot) => Column(
+                  children: snapshot.data
+                      .map(
+                        (r) => ScanResultTile(
+                      result: r,
+                      onTap: () {
+
+
+                        Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        r.device.connect(autoConnect: true);
+                        r.device.discoverServices();
+                        //characteristic.setNotifyValue(true);
+
+
+
+                          return Accueil(device : r.device, characteristic: characteristic,);
+
+                      }));
+
+  }
+                    ),
+                  )
+                      .toList(),
+                ),
               ),
             ],
           ),
         ),
-      );
-    }
-
-    return ListView(
-      padding: const EdgeInsets.all(8),
-      children: <Widget>[
-        ...containers,
-      ],
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    SizeConfig().init(context);
-    return Scaffold(
-      appBar: AppBar(
-          centerTitle: true,
-          title: Text(
-            widget.title,
-          ),
-          actions: <Widget>[
-            Image.asset('images/logo_astek.png'),
-          ]),
-      body: _buildListViewOfDevices(),
+      ),
       floatingActionButton: StreamBuilder<bool>(
         stream: FlutterBlue.instance.isScanning,
         initialData: false,
@@ -203,10 +180,72 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+}
+
+
+
+
+
+
+
+class BluetoothOffScreen extends StatefulWidget {
+  final BluetoothState state;
+  const BluetoothOffScreen(this.state, {Key key}) : super(key: key);
+
+
+  @override
+  BluetoothOffScreenState createState(){
+    return BluetoothOffScreenState(this.state);
+  }
+
+}
+
+class BluetoothOffScreenState extends State<BluetoothOffScreen>{
+
+  final BluetoothState state;
+
+  BluetoothOffScreenState(this.state);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.lightBlue,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Icon(
+              Icons.bluetooth_disabled,
+              size: 200.0,
+              color: Colors.white54,
+            ),
+            Text(
+              'Bluetooth Adapter is ${state != null ? state.toString().substring(15) : 'not available'}.',
+              style: Theme.of(context)
+                  .primaryTextTheme
+                  .subhead
+                  .copyWith(color: Colors.white),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+///Deprecated
+
+///Redirection vers la page d'appairage automatique
+
+
+
+
 
   //Cette fonction permet d'afficher une SnackBar, elle peut etre utile dans une future version
   void _showSnackBar(BuildContext context, String message) {
     final snackBar = SnackBar(content: Text(message));
     Scaffold.of(context).showSnackBar(snackBar);
   }
-}
+
+
+

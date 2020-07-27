@@ -1,195 +1,195 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from [:flutter_tts] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:shared_preferences] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:flutter_tts] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:2:5-40
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:2:5-40
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:1:11-69
 application
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:9:5-32:19
-MERGED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:9:5-32:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:11:9-44
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:11:9-44
 	android:icon
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:12:9-43
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:10:9-57
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:10:9-57
 activity#titou.demonstrateur_astek.MainActivity
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:13:9-31:20
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:13:9-31:20
 	android:launchMode
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:15:13-43
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:15:13-43
 	android:hardwareAccelerated
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:18:13-47
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:18:13-47
 	android:windowSoftInputMode
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:19:13-55
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:19:13-55
 	android:configChanges
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:17:13-144
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:17:13-144
 	android:theme
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:16:13-47
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:16:13-47
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:14:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:24:13-26:40
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:24:13-26:40
 	android:value
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:26:17-37
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:26:17-37
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:25:17-82
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:25:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:27:13-30:29
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:17-68
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:17-76
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-MERGED from [:flutter_tts] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:flutter_tts] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:shared_preferences] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+MERGED from [:flutter_tts] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_tts] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_tts\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f6b3178f2de4d20f3059415a42cf6688\appcompat-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0641618d84b79a3c43334df7b1b219d6\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3f86fc7f5919e7e366b5ab2acfd75a7c\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\7254594b105e3f92384ed4d29f0dc78b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\bc113165052c8439c7c2d42bc02e17be\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\5464c9a582cc26b5109c57a8ccb909b3\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c5b8a49928cfcb2970cdbc4f58fe8501\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\4316821c73e13dc59228ebad12d99a10\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\484ee00d689fd03eaa41c0b33e969120\vectordrawable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e0caaa3f3ab94889ba4fefca46582fd3\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\a94e9c5662f20a3af91dd5cfd9e7ac3e\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c318309e42eec0ab79ab116d6fd108f0\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6fe3711c304b63884201f4afad440f81\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b4f1c31e9314a941350ac6b9ad10c4c6\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\136d302f7de6a9350f986c2b894bf4de\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\2838e0388b2dca77b11e1194482f1bae\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\f183dd2ac274b83ccc815ff5dfbf4bc8\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\d4d1978b68299e6b36ebf77dd6afe3ff\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\99bd478190ffc25cc29c3d275cd05185\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\991ecf0f8d2c656bcc2ad23069153fcf\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\0231a2496e750eca308e8d92b9d292ff\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\1a1bb8b69cad56a664767691f7293b07\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\6f6bb819dd3dc8238694f2f75b5da12d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\3325869dfecb2e96113553042cab9983\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\e4bc3e8ca85b2717d8686eaf9f2fc394\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\b5126e01ea91e42cb60fc6c14a52f94e\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\c6de24defc2137899cdfd3109efeb68f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:5-66
+ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.BLUETOOTH
-ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
+ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
 	android:name
-		ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-65
+		ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
+ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
 	android:name
-		ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-71
+		ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from [:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+		ADDED from [:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76

@@ -1,4 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter_blue/flutter_blue.dart';
 import 'main.dart';
 import 'package:demonstrateur_astek/size_config.dart';
 import 'package:flutter/material.dart';
@@ -27,19 +28,27 @@ class Accueil extends StatefulWidget {
   double rate;
   String language;
 
-  Accueil([this.volume = 0.5, this.pitch =1, this.rate = 0.5, this.language = 'fr-FR']);
+  BluetoothDevice device;
+  final BluetoothCharacteristic characteristic;
 
+
+  Accueil({this.volume = 0.5, this.pitch =1, this.rate = 0.5, this.language = 'fr-FR', this.device, this.characteristic});
+//On met des "named arguments" ici pour pouvoir les utiliser dans l'ordre qu'on veut
 
 
   @override
   _Accueil_State createState() {
-    return _Accueil_State(this.volume, this.pitch, this.rate, this.language);
+    return _Accueil_State(this.volume, this.pitch, this.rate, this.language, this.device,this.characteristic);
   }
 }
 
 class _Accueil_State extends State<Accueil> {
 
   //Déclaration des variables
+  final BluetoothDevice device;
+  final BluetoothCharacteristic characteristic;
+
+  List<BluetoothService> _services;
 
   FlutterTts flutterTts;
   dynamic languages;
@@ -47,15 +56,19 @@ class _Accueil_State extends State<Accueil> {
   double volume;
   double pitch ;
   double rate ;
+  String mystate;
 
   String _newVoiceText;
 
   TtsState ttsState = TtsState.stopped;
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+
 
   //Constructeur & getters
 
-  _Accueil_State(this.volume , this.pitch, this.rate, this.language);
+  _Accueil_State(this.volume , this.pitch, this.rate, this.language, this.device,this.characteristic);
 
 
 
@@ -67,12 +80,29 @@ class _Accueil_State extends State<Accueil> {
 
   get isContinued => ttsState == TtsState.continued;
 
+
+
+
   @override
   initState() {
     super.initState();
+
+
+
     initTts();
     print("value volume init : $volume");
+    _getServices();
+
+    print("SERVICE DISCOVERED");
+
+
   }
+
+  _getServices()async{
+    _services = await device.discoverServices();//Vérifie que la valeur de _service ait le temps de s'initialiser avant de construire le container
+    //Sinon ajoute une condition dans la boucle for, à voir !
+  }
+
 
   //Permet de récupérer la liste des langages disponibles
   initTts() {
@@ -80,6 +110,11 @@ class _Accueil_State extends State<Accueil> {
 
     _getLanguages();
   }
+  Future<String> _getdeviceState() async{
+    String _state = await device.state.toString();
+    return _state;
+  }
+
   Future _getLanguages() async {
     languages = await flutterTts.getLanguages;
     if (languages != null) setState(() => languages);
@@ -143,6 +178,99 @@ class _Accueil_State extends State<Accueil> {
     });
     _speak();
   }
+
+  ///Bluetooth part
+  ///
+
+  List<ButtonTheme> _buildReadWriteNotifyButton(
+      BluetoothCharacteristic characteristic) {
+    List<ButtonTheme> buttons = new List<ButtonTheme>();
+
+    if (characteristic.properties.notify) {
+      characteristic.setNotifyValue(true);
+      print("notification listening");
+
+    }
+
+    return buttons;
+  }
+
+
+  ListView _buildConnectDeviceView() {
+    List<Container> containers = new List<Container>();
+
+
+
+    for (BluetoothService service in _services) {
+      List<Widget> characteristicsWidget = new List<Widget>();
+
+      for (BluetoothCharacteristic characteristic in service.characteristics) {
+        if(characteristic.properties.notify){
+          characteristicsWidget.add(
+
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Column(
+                children: <Widget>[
+                  StreamBuilder<List<int>>(
+                    stream: characteristic.value,
+                    initialData: characteristic.lastValue,
+                    builder: (c, snapshot){
+                      final value = snapshot.data;
+                      return Text(((){
+
+                        String _val = value.toString();
+                        String _newcode = "";
+                        int _code = 0;
+                        print("Val de la longueur de val: ${_val.length}");
+                        if (_val.length > 2) {
+                          for (int i = 0; i < _val.length / 4; i++) {
+                            //print("Val $i : ${value[i]}");
+                            _code = value[i] - 48;
+
+                            _newcode = _newcode + _code.toString();
+                          }
+                          print("Equivalent ds code : $_newcode");
+                        }
+                        return _newcode;
+                      })());
+
+
+                    },
+                  ),
+
+                  Row(
+                    children: <Widget>[
+                      ..._buildReadWriteNotifyButton(characteristic),
+
+                    ],
+                  ),
+
+                  Divider(),
+                ],
+              ),
+            ),
+          );
+        }
+
+      }
+      containers.add(
+        Container(
+            child: Column(
+              children: characteristicsWidget,
+            ) ),
+
+      );
+    }
+
+    return ListView(
+      padding: const EdgeInsets.all(8),
+      children: <Widget>[
+        ...containers,
+      ],
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -267,8 +395,8 @@ class _Accueil_State extends State<Accueil> {
                       side: BorderSide(color: Colors.black)),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => MyHomePage(
-                              title: "Appairage récepteur",
+                        builder: (BuildContext context) => FindDevicesScreen(
+
                             )));
                   },
                   child: Text(
@@ -278,6 +406,7 @@ class _Accueil_State extends State<Accueil> {
                   color: Colors.grey,
                 ),
               ),
+              _buildConnectDeviceView(),
             ],
           ),
         ),
@@ -286,7 +415,11 @@ class _Accueil_State extends State<Accueil> {
   }
 
   void _showSnackBar(BuildContext context, String message) {
-    final snackBar = SnackBar(content: Text(message));
-    Scaffold.of(context).showSnackBar(snackBar);
+    final snackBar = SnackBar(content: Text(message),
+    action: SnackBarAction(
+      label: "Connecté à ${device.name}",
+      onPressed: null,
+    ),);
+    _scaffoldKey.currentState.showSnackBar(snackBar);
   }
 }

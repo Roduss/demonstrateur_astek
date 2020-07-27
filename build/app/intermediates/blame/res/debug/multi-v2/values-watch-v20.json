@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tollinet\\Android_apps\\demonstrateur_astek\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "D:\\Esme\\5_eme_annee\\Astek\\Taf\\demonstrateur_astek\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\tollinet\\.gradle\\caches\\transforms-2\\files-2.1\\f6b3178f2de4d20f3059415a42cf6688\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\Titou\\.gradle\\caches\\transforms-2\\files-2.1\\f6b3178f2de4d20f3059415a42cf6688\\appcompat-1.0.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
