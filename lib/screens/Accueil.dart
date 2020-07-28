@@ -9,6 +9,7 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:demonstrateur_astek/db_utils/database_helper.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:sqflite/sqflite.dart';
 
@@ -16,7 +17,8 @@ import 'Help.dart';
 import 'Settings.dart';
 
 ///TODO :
-///Ajouter une petite barre d'info (snackbar) lorsque le code-barre est trouvé.
+///Gérer la snackbar qui s'affiche 2 fois et le discover service qui se refait à chaque fois !
+///Régler les tonalités pour les pb de sharedpreferences
 ///
 /// Page d'Accueil de l'application
 
@@ -58,6 +60,8 @@ class _Accueil_State extends State<Accueil> {
   double rate ;
   String mystate;
 
+  int _buildWidget = 0;
+
   String _newVoiceText;
 
   TtsState ttsState = TtsState.stopped;
@@ -86,21 +90,26 @@ class _Accueil_State extends State<Accueil> {
   @override
   initState() {
     super.initState();
-
-
-
-    initTts();
-    print("value volume init : $volume");
+    _get_shared();
     _getServices();
 
-    print("SERVICE DISCOVERED");
-
-
+    initTts();
+    print("value volume init : $volume , $pitch, $rate");
   }
 
+
+
   _getServices()async{
-    _services = await device.discoverServices();//Vérifie que la valeur de _service ait le temps de s'initialiser avant de construire le container
-    //Sinon ajoute une condition dans la boucle for, à voir !
+      await BluetoothDeviceState.connected;
+      _services = await device.discoverServices();//Vérifie que la valeur de _service ait le temps de s'initialiser avant de construire le container
+      //Sinon ajoute une condition dans la boucle for, à voir !
+
+
+      setState(() {
+        _services;
+        _buildWidget =_buildWidget+1;
+      });
+      print("buildwidget vaut $_buildWidget");
   }
 
 
@@ -120,13 +129,39 @@ class _Accueil_State extends State<Accueil> {
     if (languages != null) setState(() => languages);
   }
 
+
+  Future <Null> _get_shared() async{
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    final key4 = 'volume';
+    final key5 = 'pitch';
+    final key6 =  'rate';
+   // final key7 = 'language';
+
+
+    final value4 = prefs.getDouble(key4) ?? 0.5;
+    final value5 = prefs.getDouble(key5) ?? 1;
+    final value6 = prefs.getDouble(key6) ?? 0.5;
+    //final value7 = prefs.getString(key7) ??'fr-FR';
+
+
+    setState(() {
+      volume = value4;
+      pitch = value5;
+      rate = value6;
+      //language = value7;
+
+    });
+  }
+
+
   //Permet d'utiliser les hauts parleurs du smartphone
   Future _speak() async {
-    print("Val volume : $volume, rate : $rate pitch : $pitch");
+
     await flutterTts.setVolume(volume);
     await flutterTts.setSpeechRate(rate);
     await flutterTts.setPitch(pitch);
-
+    print("Val volume : $volume, rate : $rate pitch : $pitch");
     if (_newVoiceText != null) {
       if (_newVoiceText.isNotEmpty) {
         var result = await flutterTts.speak(_newVoiceText);
@@ -185,22 +220,25 @@ class _Accueil_State extends State<Accueil> {
   List<ButtonTheme> _buildReadWriteNotifyButton(
       BluetoothCharacteristic characteristic) {
     List<ButtonTheme> buttons = new List<ButtonTheme>();
-
+  if(_buildWidget == 1){
     if (characteristic.properties.notify) {
       characteristic.setNotifyValue(true);
       print("notification listening");
 
     }
+  }
+
 
     return buttons;
   }
 
 
-  ListView _buildConnectDeviceView() {
+  ListView _buildConnectDeviceView()  {
     List<Container> containers = new List<Container>();
 
 
-
+  if(_buildWidget == 1){
+    print("We are BUILDING SERVICES");
     for (BluetoothService service in _services) {
       List<Widget> characteristicsWidget = new List<Widget>();
 
@@ -208,36 +246,61 @@ class _Accueil_State extends State<Accueil> {
         if(characteristic.properties.notify){
           characteristicsWidget.add(
 
-            Align(
-              alignment: Alignment.centerLeft,
+            Center(
+
               child: Column(
                 children: <Widget>[
-                  StreamBuilder<List<int>>(
+                  Align(alignment: Alignment.center,
+                  child: StreamBuilder<List<int>>(
                     stream: characteristic.value,
                     initialData: characteristic.lastValue,
                     builder: (c, snapshot){
+
                       final value = snapshot.data;
-                      return Text(((){
+                      if(snapshot.hasData && value.toString().length >2){
+                        WidgetsBinding.instance.addPostFrameCallback((_) {
+                          _scaffoldKey.currentState.showSnackBar(
+                            SnackBar( content:
+                            Center(
 
-                        String _val = value.toString();
-                        String _newcode = "";
-                        int _code = 0;
-                        print("Val de la longueur de val: ${_val.length}");
-                        if (_val.length > 2) {
-                          for (int i = 0; i < _val.length / 4; i++) {
-                            //print("Val $i : ${value[i]}");
-                            _code = value[i] - 48;
+                                child: Text(((){
 
-                            _newcode = _newcode + _code.toString();
-                          }
-                          print("Equivalent ds code : $_newcode");
-                        }
-                        return _newcode;
-                      })());
+                                  String _val = value.toString();
+                                  String _newcode = "";
+                                  String res = "";
+                                  int _code = 0;
+                                  print("Val de la longueur de val: ${_val.length}");
+                                  if (_val.length > 2) {
+                                    for (int i = 0; i < _val.length / 4; i++) {
+                                      //print("Val $i : ${value[i]}");
+                                      _code = value[i] - 48;
+
+                                      _newcode = _newcode + _code.toString();
+                                    }
+                                    print("Equivalent ds code : $_newcode");
+                                  }
+                                  res = "Code barre reçu : " + _newcode;
+                                  _onChange(res);
+                                  return res;
+
+                                })())
+
+                                  ,
+
+
+                            )
+                        ),
+                          );
+                        });
+                      }
+                      return Container();
+
 
 
                     },
                   ),
+                    ),
+
 
                   Row(
                     children: <Widget>[
@@ -262,8 +325,12 @@ class _Accueil_State extends State<Accueil> {
 
       );
     }
+  }
+
+
 
     return ListView(
+      shrinkWrap: true,
       padding: const EdgeInsets.all(8),
       children: <Widget>[
         ...containers,
@@ -276,6 +343,7 @@ class _Accueil_State extends State<Accueil> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
         title: Text(

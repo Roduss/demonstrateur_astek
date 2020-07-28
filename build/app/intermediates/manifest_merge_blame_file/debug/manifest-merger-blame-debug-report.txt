@@ -12,17 +12,17 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.BLUETOOTH" />
-15-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
-15-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-65
+15-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-68
+15-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-65
 16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-16-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
-16-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-71
+16-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-74
+16-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-71
 17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-17-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
-17-->[:flutter_blue] D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+17-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+17-->[:flutter_blue] C:\Users\tollinet\Android_apps\demonstrateur_astek\build\flutter_blue\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
 18    <!--
 19 io.flutter.app.FlutterApplication is an android.app.Application that
 20         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -31,30 +31,30 @@
 23         FlutterApplication and put your custom class here.
 24    -->
 25    <application
-25-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:9:5-32:19
+25-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:9:5-32:19
 26        android:name="io.flutter.app.FlutterApplication"
-26-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:10:9-57
+26-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:10:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.1.0] C:\Users\Titou\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.1.0] C:\Users\tollinet\.gradle\caches\transforms-2\files-2.1\ef4aa41528db05e70323e5c7c66ffd8a\core-1.1.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
-29-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:12:9-43
+29-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:12:9-43
 30        android:label="demonstrateur_astek" >
-30-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:11:9-44
+30-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:11:9-44
 31        <activity
-31-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:13:9-31:20
+31-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:13:9-31:20
 32            android:name="titou.demonstrateur_astek.MainActivity"
-32-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:14:13-41
+32-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:14:13-41
 33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:17:13-144
+33-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:17:13-144
 34            android:hardwareAccelerated="true"
-34-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:18:13-47
+34-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:18:13-47
 35            android:launchMode="singleTop"
-35-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:15:13-43
+35-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:15:13-43
 36            android:theme="@style/LaunchTheme"
-36-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:16:13-47
+36-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:16:13-47
 37            android:windowSoftInputMode="adjustResize" >
-37-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:19:13-55
+37-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:19:13-55
 38
 39            <!--
 40                 This keeps the window background of the activity showing
@@ -63,21 +63,21 @@
 43                 defined in @style/LaunchTheme).
 44            -->
 45            <meta-data
-45-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:24:13-26:40
+45-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:24:13-26:40
 46                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-46-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:25:17-82
+46-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:25:17-82
 47                android:value="true" />
-47-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:26:17-37
+47-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:26:17-37
 48
 49            <intent-filter>
-49-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:27:13-30:29
+49-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:27:13-30:29
 50                <action android:name="android.intent.action.MAIN" />
-50-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:17-68
-50-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:25-66
+50-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:17-68
+50-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:28:25-66
 51
 52                <category android:name="android.intent.category.LAUNCHER" />
-52-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:17-76
-52-->D:\Esme\5_eme_annee\Astek\Taf\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:27-74
+52-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:17-76
+52-->C:\Users\tollinet\Android_apps\demonstrateur_astek\android\app\src\main\AndroidManifest.xml:29:27-74
 53            </intent-filter>
 54        </activity>
 55    </application>
